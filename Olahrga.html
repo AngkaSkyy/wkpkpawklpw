@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sportique - Toko Peralatan Olahraga</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Sportique</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero" class="active">Beranda</a></li>
+          <li><a href="#features">Produk</a></li>
+          <li><a href="#pricing">Paket</a></li>
+          <li><a href="#about">Tentang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+  <div class="container">
+    <h2>Selamat Datang di Sportique</h2>
+    <p>Temukan perlengkapan olahraga terbaik untuk gaya hidup aktifmu!</p>
+    <button id="cta-button" class="btn-primary">Belanja Sekarang</button>
+  </div>
+</section>
+
+    <section id="features" class="features-section">
+      <div class="container">
+        <h3>Produk Unggulan</h3>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <img src="bola.jpg" alt="Bola Basket" />
+            <h4>Bola Basket Premium</h4>
+            <p>Bahan kulit sintetis tahan lama untuk performa maksimal.</p>
+          </div>
+          <div class="feature-item">
+            <img src="sepatu.jpg" alt="Sepatu Lari" />
+            <h4>Sepatu Lari</h4>
+            <p>Nyaman, ringan, dan cocok untuk segala medan.</p>
+          </div>
+          <div class="feature-item">
+            <img src="mat.jpg" alt="Yoga Mat" />
+            <h4>Matras Yoga</h4>
+            <p>Anti-slip dan tebal, sempurna untuk latihan fleksibilitas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <h3>Paket Keanggotaan</h3>
+        <p>Dapatkan diskon eksklusif dan hadiah menarik!</p>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h4>Basic</h4>
+            <p>Akses belanja dan tips olahraga</p>
+            <p class="price">Gratis</p>
+            <button class="btn-primary">Pilih Paket</button>
+          </div>
+          <div class="pricing-card popular">
+            <h4>Member</h4>
+            <p>Diskon 10% + hadiah bulanan</p>
+            <p class="price">Rp 25.000 / bulan</p>
+            <button class="btn-primary">Pilih Paket</button>
+          </div>
+          <div class="pricing-card">
+            <h4>Pro</h4>
+            <p>Diskon 25% + merchandise eksklusif</p>
+            <p class="price">Rp 60.000 / bulan</p>
+            <button class="btn-primary">Pilih Paket</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h3>Tentang Sportique</h3>
+        <p>Sportique adalah toko perlengkapan olahraga modern yang mendukung gaya hidup sehat dan aktif.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Sportique. Semua Hak Dilindungi.</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  </script>
+</body>
+</html>
